@@ -25,6 +25,6 @@ def mycopyfile(srcfile,dstfile):
         print ("copy %s -> %s"%( srcfile,dstfile))
 
 srcfile='C:\\Users\\jiunlin\\Desktop\\test.xlsx'
-dstfile='C:\\Users\\jiunlin\\Desktop\\test2.xlsx'
+dstfile='C:\\Users\\jiunlin\\Desktop'
 
 mycopyfile(srcfile,dstfile)
