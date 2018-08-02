@@ -8,20 +8,20 @@ def mymovefile(srcfile,dstfile):
     if not os.path.isfile(srcfile):
         print "%s not exist!"%(srcfile)
     else:
-        fpath,fname=os.path.split(dstfile)    #分离文件名和路径
+        fpath,fname=os.path.split(dstfile)    #分離檔案名稱與路徑
         if not os.path.exists(fpath):
-            os.makedirs(fpath)                #创建路径
-        shutil.move(srcfile,dstfile)          #移动文件
+            os.makedirs(fpath)                #建立路徑
+        shutil.move(srcfile,dstfile)          #移動檔案
         print "move %s -> %s"%( srcfile,dstfile)
 
 def mycopyfile(srcfile,dstfile):
     if not os.path.isfile(srcfile):
         print "%s not exist!"%(srcfile)
     else:
-        fpath,fname=os.path.split(dstfile)    #分离文件名和路径
+        fpath,fname=os.path.split(dstfile)    #分離檔案名稱與路徑
         if not os.path.exists(fpath):
-            os.makedirs(fpath)                #创建路径
-        shutil.copyfile(srcfile,dstfile)      #复制文件
+            os.makedirs(fpath)                #建立路徑
+        shutil.copyfile(srcfile,dstfile)      #複製檔案
         print "copy %s -> %s"%( srcfile,dstfile)
 
 srcfile='/Users/xxx/git/project1/test.sh'
